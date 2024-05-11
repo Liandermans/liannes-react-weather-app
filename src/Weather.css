@@ -1,3 +1,58 @@
+:root {
+  --first-color: #222831;
+  --second-color: #393e46;
+  --third-color: #0092ca;
+  --fourth-color: #eeeeee;
+}
+
 .Weather {
-  color: blue;
+  background-color: var(--first-color);
+  color: var(--fourth-color);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.Weather h2 {
+  color: var(--third-color);
+  font-weight: 600;
+}
+
+.Weather .date-time {
+  opacity: 0.8;
+}
+
+.Weather ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Weather ul.city-date {
+  text-align: start;
+}
+
+.Weather input {
+  margin: 5px;
+  border-radius: 4px;
+  border-style: none;
+  padding: 6px;
+}
+.Weather .location-icon {
+  height: 25px;
+  vertical-align: -4px;
+  opacity: 0.8;
+}
+
+.Weather .wrapper {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(2, 100px);
+}
+
+.Weather .icon {
+  background-color: var(--second-color);
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  border-radius: 50%;
+  margin-bottom: 5px;
 }

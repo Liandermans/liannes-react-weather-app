@@ -48,6 +48,18 @@
   opacity: 0.8;
 }
 
+.temperature {
+  font-size: 30px;
+}
+.description {
+  text-transform: capitalize;
+  opacity: 0.8;
+}
+span {
+  font-size: 16px;
+  vertical-align: 9px;
+}
+
 .Weather .wrapper {
   display: grid;
   justify-content: space-evenly;

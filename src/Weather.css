@@ -9,7 +9,7 @@
   background-color: var(--first-color);
   color: var(--fourth-color);
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px;
 }
 
 .Weather h2 {
@@ -36,6 +36,12 @@
   border-style: none;
   padding: 6px;
 }
+
+.Weather .search-button {
+  background-color: var(--fourth-color);
+  color: var(--first-color);
+}
+
 .Weather .location-icon {
   height: 25px;
   vertical-align: -4px;
@@ -50,8 +56,8 @@
 
 .Weather .icon {
   background-color: var(--second-color);
-  width: 30px;
   height: 30px;
+  width: 30px;
   padding: 20px;
   border-radius: 50%;
   margin-bottom: 5px;

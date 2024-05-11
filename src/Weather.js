@@ -17,7 +17,7 @@ export default function Weather() {
 
       <form>
         <input type="text" placeholder="Enter city" autoFocus="on" />
-        <input type="submit" value="Search" />{" "}
+        <input type="submit" value="Search" className="search-button" />{" "}
         <FontAwesomeIcon icon={faLocationDot} className="location-icon" />
       </form>
 

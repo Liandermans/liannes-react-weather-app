@@ -5,6 +5,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faDroplet } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
+import FormatDate from "./FormatDate";
 
 export default function Weather(props) {
   const [ready, setReady] = useState(false);
@@ -19,6 +20,7 @@ export default function Weather(props) {
       icon: response.data.condition.icon,
       humidity: response.data.temperature.humidity,
       windspeed: Math.round(response.data.wind.speed),
+      date: new Date(response.data.time * 1000),
     });
 
     setReady(true);
@@ -31,7 +33,9 @@ export default function Weather(props) {
           <li>
             <h2>{weatherData.city}</h2>
           </li>
-          <li className="date-time">Saturday, 13:40</li>
+          <li className="date-time">
+            <FormatDate date={weatherData.date} />
+          </li>
         </ul>
 
         <form>

@@ -2,16 +2,17 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDroplet } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
+import DisplayTemperature from "./DisplayTemperature";
 
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <ul className="weather-today">
         <li>
-          <img src={props.data.icon_url} alt={props.data.icon} />
+          <img src={props.data.icon_url} alt={props.data.alt} />
         </li>
         <li className="temperature">
-          {props.data.temperature} <span>°C</span>
+          <DisplayTemperature celsius={props.data.temperature} />
         </li>
         <li className="description">{props.data.description}</li>
       </ul>

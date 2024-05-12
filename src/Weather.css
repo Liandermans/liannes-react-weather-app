@@ -10,11 +10,17 @@
   color: var(--fourth-color);
   border-radius: 20px;
   padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .Weather h2 {
   color: var(--third-color);
   font-weight: 600;
+}
+
+.Weather a {
+  text-decoration: none;
 }
 
 .Weather .date-time {
@@ -55,7 +61,7 @@
   text-transform: capitalize;
   opacity: 0.8;
 }
-span {
+.degrees {
   font-size: 16px;
   vertical-align: 9px;
 }

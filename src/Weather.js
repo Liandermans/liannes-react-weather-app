@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./Weather.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import LocationInfo from "./LocationInfo";
@@ -55,8 +53,7 @@ export default function Weather(props) {
             autoComplete="off"
             onChange={getCity}
           />
-          <input type="submit" value="Search" className="search-button" />{" "}
-          <FontAwesomeIcon icon={faLocationDot} className="location-icon" />
+          <input type="submit" value="Search" className="search-button" />
         </form>
 
         <WeatherInfo data={weatherData} />

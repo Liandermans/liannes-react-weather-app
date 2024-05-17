@@ -63,6 +63,6 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return <div className="Weather">Loading...</div>;
+    return null;
   }
 }

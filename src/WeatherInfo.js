@@ -2,7 +2,6 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDroplet } from "@fortawesome/free-solid-svg-icons";
 import { faWind } from "@fortawesome/free-solid-svg-icons";
-import DisplayTemperature from "./DisplayTemperature";
 
 export default function WeatherInfo(props) {
   return (
@@ -12,7 +11,8 @@ export default function WeatherInfo(props) {
           <img src={props.data.icon_url} alt={props.data.alt} />
         </li>
         <li className="temperature">
-          <DisplayTemperature celsius={props.data.temperature} />
+          {Math.round(props.data.temperature)}
+          <span className="degrees"> °C</span>
         </li>
         <li className="description">{props.data.description}</li>
       </ul>

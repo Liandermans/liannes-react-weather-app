@@ -6,9 +6,15 @@
 }
 
 .WeatherForecast .min-temperature {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .WeatherForecast img {
   width: 60px;
+}
+
+@media (max-width: 500px) {
+  .WeatherForecastDay {
+    margin: 10px 0 10px;
+  }
 }

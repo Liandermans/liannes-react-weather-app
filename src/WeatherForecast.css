@@ -1,0 +1,14 @@
+.WeatherForecast {
+  margin-top: 20px;
+  background-color: var(--second-color);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.WeatherForecast .min-temperature {
+  opacity: 0.7;
+}
+
+.WeatherForecast img {
+  width: 60px;
+}
